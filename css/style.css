@@ -1,0 +1,236 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+}
+.hamburger {
+  display: none;
+}
+.hamburger div {
+  background-color: black;
+  width: 25px;
+  height: 3px;
+  margin: 5px;
+}
+dt {
+  font-weight: bold;
+}
+dd {
+  display: block;
+  margin-left: 5%;
+}
+
+body {
+  background-color: rgb(42, 174, 210);
+  background-image: url(../images/bg.jpg);
+  background-repeat: no-repeat;
+  height:100%;
+  background-size: cover;
+  
+}
+main p img{ max-width: 100%; height: auto;}
+#container {
+	
+  background-color: white;
+  position: relative;
+  margin-top: 0px;
+}
+header {
+  background-color: rgb(1, 119, 154);
+  background-image: url(../images/headerpic.jpg);
+  background-size: cover;
+}
+header h1 {
+	
+  text-transform: uppercase;
+  text-shadow: -2px 2px 7px #111111;
+  font-family: "Piedra", cursive, sans-serif;
+  letter-spacing: 0.5em;
+  padding: 5px;
+  text-align: center;
+}
+
+nav a {
+  transition: all 0.3s ease 0s;
+  color: wheat;
+  font-size: 0.9em;
+  text-align: center;
+  letter-spacing: 0.1em;
+}
+a {
+  text-decoration: none;
+}
+p {
+  margin: 10px;
+}
+
+nav li a:link{
+	color: white;
+}
+nav li a:visited{
+	color: black;
+}
+
+nav li a:hover {
+  color: wheat;
+}
+nav li a:active{
+	color: white;
+}
+
+nav li {
+  margin: 5px;
+}
+nav ul {
+  background-color: rgb(1, 119, 154);
+  font-family: Impact, "Arial Black", Bookman, "Courier New", Courier, monospace;
+  list-style: none;
+  margin: 0px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+
+  border: 1px solid black;
+}
+.mainContent h2 {
+  
+  padding: 0px;
+  margin-top: 0px;
+  text-align: left;
+}
+.mainContent hr {
+  border: 1px solid black;
+}
+.mainContent {
+  margin: 0px;
+  padding: 20px;
+  font-size: 18px;
+  background-color: rgb(42, 174, 210);
+}
+.mainContent img {
+  float: left;
+  padding: 10px;
+}
+/* footer style*/
+footer {
+  font-size: 0.7em;
+  font-style: italic;
+  text-align: center;
+  background-color: rgb(8, 111, 143);
+  padding: 1em;
+}
+footer ul li {
+  display: inline;
+}
+footer .fa {
+  font-size: 2em;
+}
+footer li {
+  margin-right: 10px;
+}
+footer p {
+  margin: 5px;
+  margin-top: 0px;
+}
+/*contact form style*/
+#contact input[type="text"],
+#contact input[type="email"],
+#contact input[type="tel"],
+#contact input[type="url"],
+#contact textarea,
+#contact button[type="submit"] {
+  font: 400 12px/16px "Open Sans", Helvetica, Arial, sans-serif;
+}
+#contact {
+  background: #f9f9f9;
+  padding: 25px;
+  max-width: 400px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+#contact h4 {
+  margin: 5px 0 15px;
+  display: block;
+  font-size: 15px;
+}
+fieldset {
+  border: medium none;
+  margin: 0 0 10px;
+  min-width: 100%;
+  padding: 0;
+  width: 100%;
+}
+#contact textarea {
+  height: 100px;
+  max-width: 100%;
+  resize: none;
+}
+#contact input,
+textarea {
+  width: 100%;
+}
+#contact button[type="submit"] {
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  background: #0cf;
+  color: #fff;
+  margin: 0 0 5px;
+  padding: 10px;
+  font-size: 15px;
+}
+#contact button[type="submit"]:hover {
+  background: #09c;
+  -webkit-transition: background 0.3s ease-in-out;
+  -moz-transition: background 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+}
+
+#contact input:focus,
+#contact textarea:focus {
+  outline: 0;
+  border: 1px solid #999;
+}
+
+/* this css rule will be applied only if the user is viewing the site on big screen such as laptop or monitor*/
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  #container{
+	  padding: 0px;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  header h1{font-size:5vw;}
+  
+}
+@media screen and (min-width:1200px){
+	header{font-size: 1.5vw;}
+	.mainContent{font-size: 1vw;}
+	
+}
+
+@media screen and (max-width: 565px) {
+  header {
+    border: 1px solid black;
+  }
+  .mainContent img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    float: none;
+  }
+  
+  nav ul {
+    flex-direction: column;
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+  }
+  header h1 {
+    /*font-size:10vw;*/
+  }
+}
