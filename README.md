@@ -1,7 +1,7 @@
-# personalWebsite
+# Personal Website
 
 --- Live Site [Webiste Link](https://substeven.netlify.app/)
 
 ### Screenshot
 
-![](./sitescreenshot.jpg)
+![](./site-screeenshot.jpg)
